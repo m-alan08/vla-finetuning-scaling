@@ -14,7 +14,7 @@ Experiments: data scaling (about 10%, 25%, 50% and 100% of demos per task), a fr
 
 | Stage | What | State |
 |---|---|---|
-| 0 | Repo skeleton | Done (committed locally, not yet pushed) |
+| 0 | Repo skeleton | Done (pushed to GitHub) |
 | 1 | Environment probe on the cluster | Not started |
 | 2 | Design document | Not started (stub only) |
 | 3a | Pipeline and smoke tests | Not started |
