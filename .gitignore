@@ -1,0 +1,95 @@
+# Python environments
+.venv/
+venv/
+/env/
+.conda/
+conda-env/
+envs/
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache/
+hf_cache/
+.hf_cache/
+huggingface/
+torch_cache/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Training outputs and checkpoints
+outputs/
+/output/
+/runs/
+checkpoints/
+checkpoint/
+wandb/
+lightning_logs/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.h5
+*.gguf
+/weights/
+/models/
+
+# Datasets
+/data/
+/datasets/
+*.parquet
+*.arrow
+*.hdf5
+*.mp4
+*.webm
+*.zarr/
+
+# External clones installed in editable mode
+third_party/
+external/
+
+# SLURM logs
+slurm-*.out
+slurm-*.err
+slurm/logs/
+logs/
+*.log
+
+# Probe reports
+probe/reports/
+probe_report*.json
+
+# Secrets and tokens
+.env
+.env.*
+*.token
+*_token
+*_token.txt
+.hf_token
+.netrc
+*.pem
+*.key
+secrets/
+
+# Results: keep only small result files trackable
+results/**
+!results/**/
+!results/**/*.json
+!results/**/*.csv
+!results/**/*.png
+!results/**/*.md
