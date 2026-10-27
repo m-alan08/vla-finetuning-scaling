@@ -2,6 +2,7 @@
 #SBATCH --job-name=vla-probe
 #SBATCH --partition=general
 #SBATCH --gres=gpu:1
+#SBATCH --exclude=nvidia-gh200-[1-4],amd-mi210-[1-4],amd-mi300a-[1-2],nvidia-p40-[1-8],dgx1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=00:30:00

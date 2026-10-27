@@ -7,7 +7,7 @@ Environment probe: a script that tries each risky setup step in miniature (GPU, 
 | File | What it is |
 |---|---|
 | `probe.py` | The probe. Needs only the Python standard library to start, so it can diagnose a broken environment. |
-| `run_probe.sbatch` | SLURM job: general partition, 1 GPU, 8 CPUs, 32G, 30 minutes. Runs the probe with the GPU required. |
+| `run_probe.sbatch` | SLURM job: general partition, 1 GPU, 8 CPUs, 32G, 30 minutes. Runs the probe with the GPU required. Avoids GPU nodes the x86 CUDA environment cannot use: ARM GH200, AMD MI210 and MI300A, and the older P40 and V100 (dgx1) nodes without native bf16. |
 | `reports/` | JSON reports, one per run (ignored by git). |
 | `../tests/test_probe.py` | Unit tests of the probe's own logic. |
 
